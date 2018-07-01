@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Services
+	</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+	background-color:#ccffff;
+}
+/* Style the header */
+#grad1 {
+    height: 275px;
+    background: blue; /* For browsers that do not support gradients */
+    background: linear-gradient(#0099cc, #66ccff ); /* Standard syntax (must be last) */
+	padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    color: orange;
+}
+
+.sidenav {
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.sidenav a {
+    padding: 10px 8px 10px 16px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
+}
+
+.main {
+
+    margin-left: 285px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+	h4
+{
+	color: orange
+}
+h6
+{
+	color: #004080
+}
+
+
+</style>
+<header>
+		<div id="grad1">
+			<img src="Mark5RegisteredTrademark.png">		
+		</div>
+</header>
+</head>
+<body>
+
+<div class="sidenav">
+
+  <a href="indexv5.html">Home</a>
+  <a href="ServicesProvided.html">Services</a>
+  <a href="Testimonials.html">Testimonials</a>
+  <a href="FAQ.html">FAQ</a>
+</div>
+
+<div class="main">
+  <h2>Services Provided</h2>
+          <h6>
+			<ul>
+				<li>Z-AppXpert will use your current software to either design and/or develop a customized solution for your Business</li>
+				<li>Z-AppXpert will program your current software</li>
+				<li>Z-AppXpert will update your software</li>
+				<li>Z-AppXpert will design, develop, update and/or program your software</li>	
+				<li>Looking for a practical solution that uses your current software</li>	
+			</ul>
+			<p>Interested in our services? Get in touch with us via the form below and we'll get back to you as soon as possible!</p>
+		</h6>
+			<form>
+			  First Name*:<br>
+				<input type="text" name="firstname" placeholder="Type Your First Name" style="width:400px;">
+			  <br>
+			  Last Name*:<br>
+				<input type="text" name="lastname" placeholder="Type Your Last Name" style="width:400px;">
+			<br>
+			 Email*:<br>
+				<input type="email" name="EmailAddress" placeholder="Type Email" style="width:400px;">
+			<br>
+			 Message*:<br>
+				<input type="texgt" name="message" placeholder="Type message" style="width:400px; height:50px;">
+			<br>
+			 Attach supporting documents (requirements, visio documents, images):<br>
+			  <input type="file" name="supporting documents" style="width:400px;">
+			  <br>			  
+			  <br>
+			  <input type="submit" value="Submit">
+			</form> 
+</div>    
+
+</body>
+</html> 
