@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAC,EACD;EACC,KAAK,EAAE,MAAM;;AAEd,EACA;EACC,KAAK,EAAE,OAAO",
+"sources": ["variable_Font_Color.scss"],
+"names": [],
+"file": "variable_Font_Color"
+}

@@ -1,119 +1,556 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>
-		Services
-	</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-    font-family: "Lato", sans-serif;
-	background-color:#ccffff;
-}
-/* Style the header */
-#grad1 {
-    height: 275px;
-    background: blue; /* For browsers that do not support gradients */
-    background: linear-gradient(#0099cc, #66ccff ); /* Standard syntax (must be last) */
-	padding: 20px;
-    text-align: center;
-    font-size: 28px;
-    color: orange;
-}
+	<html>
+		<head>
+			<title>
+				Services
+			</title>
 
-.sidenav {
-    width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 20px;    left: 10px;
-    background: #eee;
-    overflow-x: hidden;
-    padding: 8px 0;
-}
-
-.sidenav a {
-    padding: 10px 8px 10px 16px;
-    text-decoration: none;
-    font-size: 35px;
-    color: #2196F3;
-    display: block;
-}
-
-.sidenav a:hover {
-    color: #064579;
-}
-
-.main {
-
-    margin-left: 285px; /* Same width as the sidebar + left position in px */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-	h4
-{
-	color: orange
-}
-h6
-{
-	color: #004080
-}
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+				<header>
+					<div id="grad1">
+						<img src="Mark5RegisteredTrademark.png">
+					</div>
 
 
-</style>
-<header>
-		<div id="grad1">
-			<img src="Mark5RegisteredTrademark.png">
-		</div>
-</header>
-</head>
-<body>
+				<style>
+						input[type=text]
+						{
+							background-color: yellow;
+							color: black;
+						}
 
-<div class="sidenav">
+						input[type=email]
+						{
+							background-color: #ccffff;
+							color: black;
+						}
+						.row > div
+						{
+							padding: 20px;
+							background-color: #66ffff;
+							border: 2px solid black;
+						}
 
-  <a href="index.html">Home</a>
-  <a href="ServicesProvided.html">Services</a>
-  <a href="Testimonials.html">Testimonials</a>
-  <a href="FAQ.html">FAQ</a>
-</div>
+				</style>
+				</header>
+		</head>
+			<link rel="stylesheet" href="style_main.css" />
 
-<div class="main">
-  <h2>Services Provided</h2>
-          <h6>
-			<ul>
-				<li>Z-AppXpert will use your current software to either design and/or develop a customized solution for your Business</li>
-				<li>Z-AppXpert will program your current software</li>
-				<li>Z-AppXpert will update your software</li>
-				<li>Z-AppXpert will design, develop, update and/or program your software</li>
-				<li>Looking for a practical solution that uses your current software</li>
-			</ul>
-			<p>Interested in our services? Get in touch with us via the form below and we'll get back to you as soon as possible!</p>
-		</h6>
-			<form>
-			  First Name*:<br>
-				<input type="text" name="firstname" placeholder="Type Your First Name" style="width:400px;">
-			  <br>
-			  Last Name*:<br>
-				<input type="text" name="lastname" placeholder="Type Your Last Name" style="width:400px;">
-			<br>
-			 Email*:<br>
-				<input type="email" name="EmailAddress" placeholder="Type Email" style="width:400px;">
-			<br>
-			 Message*:<br>
-				<input type="texgt" name="message" placeholder="Type message" style="width:400px; height:50px;">
-			<br>
-			 Attach supporting documents (requirements, visio documents, images):<br>
-			  <input type="file" name="supporting documents" style="width:400px;">
-			  <br>
-			  <br>
-			  <input type="submit" value="Submit">
-			</form>
-</div>
+				<body>
 
-</body>
-</html>
+					<div class="sidenav">
+
+						<a href="index.html">Home</a>
+						<a href="ServicesProvided.html">Services</a>
+						<a href="Testimonials.html">Testimonials</a>
+						<a href="FAQ.html">FAQ</a>
+					</div>
+
+						<div class="main">
+						<br><br>
+							<h2>Services Provided</h2>
+
+		<div class="container">
+			<div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    Z-AppXpert will use your current software to either design and/or develop a customized solution for your Business
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    Z-AppXpert will program your current software
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    Z-AppXpert will update your current software
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    Z-AppXpert will design, develop, update and/or program your current software
+                </div>
+            </div>
+        </div>
+<br>	<br>
+
+
+										<p>
+											Interested in our services? Get in touch with us via the form below
+											and we'll get back to you as soon as possible!
+										</p>
+								</h6>
+
+									<form>
+										First Name*:
+										<br>
+											<input type="text" name="firstname" placeholder="Type Your First Name" style="width:400px;">
+										 <br>
+											Last Name*:<br>
+												<input type="text" name="lastname" placeholder="Type Your Last Name" style="width:400px;">
+										<br>
+											Email*:<br>
+												<input type="email" name="EmailAddress" placeholder="Type Email" style="width:400px;">
+										<br>
+											Industry*:<br>
+											<div>
+												<input name="Industry" list="industries" placeholder="Industry">
+												<datalist id="industries">
+														<Option value="Gold and Silver Ores">
+														<Option value="Miscellaneous Metal Ores">
+														<Option value="Bituminous Coal & Lignite Mining">
+														<Option value="Bituminous Coal & Lignite Surface Mining">
+														<Option value="Crude Petroleum & Natural Gas">
+														<Option value="Drilling Oil & Gas Wells">
+														<Option value="Oil & Gas Field Exploration Services">
+														<Option value="Oil & Gas Field Services, NEC">
+														<Option value="Mining & Quarrying of Nonmetallic Minerals (No Fuels)">
+														<Option value="General Bldg Contractors - Residential Bldgs">
+														<Option value="Operative Builders">
+														<Option value="General Bldg Contractors - Nonresidential Bldgs">
+														<Option value="Heavy Construction Other Than Bldg Const - Contractors">
+														<Option value="Water, Sewer, Pipeline, Comm & Power Line Construction">
+														<Option value="Heavy Construction, Not Elsewhere Classified[6]">
+														<Option value="Construction - Special Trade Contractors">
+														<Option value="Electrical Work">
+														<Option value="Food and Kindred Products">
+														<Option value="Meat Packing Plants">
+														<Option value="Sausages & Other Prepared Meat Products">
+														<Option value="Poultry Slaughtering and Processing">
+														<Option value="Dairy Products">
+														<Option value="Ice Cream & Frozen Desserts">
+														<Option value="Canned, Frozen & Preserved Fruit, Veg & Food Specialties">
+														<Option value="Canned, Fruits, Veg, Preserves, Jams & Jellies">
+														<Option value="Grain Mill Products">
+														<Option value="Bakery Products">
+														<Option value="Cookies & Crackers">
+														<Option value="Sugar & Confectionery Products">
+														<Option value="Fats & Oils">
+														<Option value="Beverages">
+														<Option value="Malt Beverages">
+														<Option value="Bottled & Canned Soft Drinks & Carbonated Waters">
+														<Option value="Miscellaneous Food Preparations & Kindred Products">
+														<Option value="Prepared Fresh or Frozen Fish & Seafood">
+														<Option value="Tobacco Products">
+														<Option value="Cigarettes">
+														<Option value="Textile Mill Products">
+														<Option value="Broadwoven Fabric Mills, Cotton">
+														<Option value="Broadwoven Fabric Mills, Man Made Fiber & Silk">
+														<Option value="Knitting Mills">
+														<Option value="Knit Outerwear Mills">
+														<Option value="Carpets & Rugs">
+														<Option value="Apparel & Other Finished Prods of Fabrics & Similar Matl">
+														<Option value="Men's & Boys' Furnishings, Work Clothing, & Allied Garments">
+														<Option value="Women's, Misses', and Juniors Outerwear">
+														<Option value="Women's, Misses', Children's & Infant's Undergarments">
+														<Option value="Miscellaneous Fabricated Textile Products">
+														<Option value="Lumber & Wood Products (No Furniture)">
+														<Option value="Sawmills & Planing Mills, General">
+														<Option value="Millwood, Veneer, Plywood, & Structural Wood Members">
+														<Option value="Mobile Homes">
+														<Option value="Prefabricated Wood Bldgs & Components">
+														<Option value="Household Furniture">
+														<Option value="Wood Household Furniture, (No Upholstered)">
+														<Option value="Office Furniture">
+														<Option value="Office Furniture (No Wood)">
+														<Option value="Public Bldg & Related Furniture">
+														<Option value="Partitions, Shelvg, Lockers, & office & Store Fixtures">
+														<Option value="Miscellaneous Furniture & Fixtures">
+														<Option value="Papers & Allied Products">
+														<Option value="Pulp Mills">
+														<Option value="Paper Mills">
+														<Option value="Paperboard Mills">
+														<Option value="Paperboard Containers & Boxes">
+														<Option value="Converted Paper & Paperboard Prods (No Containers/Boxes)">
+														<Option value="Plastics, Foil & Coated Paper Bags">
+														<Option value="Newspapers: Publishing or Publishing & Printing">
+														<Option value="Periodicals: Publishing or Publishing & Printing">
+														<Option value="Books: Publishing or Publishing & Printing">
+														<Option value="Book Printing">
+														<Option value="Miscellaneous Publishing">
+														<Option value="Commercial Printing">
+														<Option value="Manifold Business Forms">
+														<Option value="Greeting Cards">
+														<Option value="Blankbooks, Looseleaf Binders & Bookbinding & Related Work">
+														<Option value="Service Industries For The Printing Trade">
+														<Option value="Chemicals & Allied Products">
+														<Option value="Industrial Inorganic Chemicals">
+														<Option value="Plastic Material, Synth Resin/Rubber, Cellulos (No Glass)">
+														<Option value="Plastic Materials, Synth Resins & Nonvulcan Elastomers">
+														<Option value="Medicinal Chemicals & Botanical Products">
+														<Option value="Pharmaceutical Preparations">
+														<Option value="In Vitro & In Vivo Diagnostic Substances">
+														<Option value="Biological Products, (No Diagnostic Substances)">
+														<Option value="Soap, Detergents, Cleaning Preparations, Perfumes, Cosmetics">
+														<Option value="Specialty Cleaning, Polishing and Sanitation Preparations">
+														<Option value="Perfumes, Cosmetics & Other Toilet Preparations">
+														<Option value="Paints, Varnishes, Lacquers, Enamels & Allied Prods">
+														<Option value="Industrial Organic Chemicals">
+														<Option value="Agricultural Chemicals">
+														<Option value="Miscellaneous Chemical Products">
+														<Option value="Adhesives & Sealants">
+														<Option value="Petroleum Refining">
+														<Option value="Asphalt Paving & Roofing Materials">
+														<Option value="Miscellaneous Products of Petroleum & Coal">
+														<Option value="Tires & Inner Tubes">
+														<Option value="Rubber & Plastics Footwear">
+														<Option value="Gaskets, Packg & Sealg Devices & Rubber & Plastics Hose">
+														<Option value="Fabricated Rubber Products, NEC">
+														<Option value="Miscellaneous Plastics Products">
+														<Option value="Unsupported Plastics Film & Sheet">
+														<Option value="Plastics Foam Products">
+														<Option value="Plastics Products, NEC">
+														<Option value="Leather & Leather Products">
+														<Option value="Footwear, (No Rubber)">
+														<Option value="Flat Glass">
+														<Option value="Glass & Glassware, Pressed or Blown">
+														<Option value="Glass Containers">
+														<Option value="Glass Products, Made of Purchased Glass">
+														<Option value="Cement, Hydraulic">
+														<Option value="Structural Clay Products">
+														<Option value="Pottery & Related Products">
+														<Option value="Concrete, Gypsum & Plaster Products">
+														<Option value="Concrete Products, Except Block & Brick">
+														<Option value="Cut Stone & Stone Products">
+														<Option value="Abrasive, Asbestos & Misc Nonmetallic Mineral Prods">
+														<Option value="Steel Works, Blast Furnaces & Rolling & Finishing Mills">
+														<Option value="Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)">
+														<Option value="Steel Pipe & Tubes">
+														<Option value="Iron & Steel Foundries">
+														<Option value="Primary Smelting & Refining of Nonferrous Metals">
+														<Option value="Primary Production of Aluminum">
+														<Option value="Secondary Smelting & Refining of Nonferrous Metals">
+														<Option value="Rolling Drawing & Extruding of Nonferrous Metals">
+														<Option value="Drawing & Insulating of Nonferrous Wire">
+														<Option value="Nonferrous Foundries (Castings)">
+														<Option value="Miscellaneous Primary Metal Products">
+														<Option value="Metal Cans">
+														<Option value="Metal Shipping Barrels, Drums, Kegs & Pails">
+														<Option value="Cutlery, Handtools & General Hardware">
+														<Option value="Heating Equip, Except Elec & Warm Air; & Plumbing Fixtures">
+														<Option value="Heating Equipment, Except Electric & Warm Air Furnaces">
+														<Option value="Fabricated Structural Metal Products">
+														<Option value="Metal Doors, Sash, Frames, Moldings & Trim">
+														<Option value="Fabricated Plate Work (Boiler Shops)">
+														<Option value="Sheet Metal Work">
+														<Option value="Prefabricated Metal Buildings & Components">
+														<Option value="Screw Machine Products">
+														<Option value="Bolts, Nuts, Screws, Rivets & Washers">
+														<Option value="Metal Forgings & Stampings">
+														<Option value="Coating, Engraving & Allied Services">
+														<Option value="Ordnance & Accessories, (No Vehicles/Guided Missiles)">
+														<Option value="Miscellaneous Fabricated Metal Products">
+														<Option value="Engines & Turbines">
+														<Option value="Farm Machinery & Equipment">
+														<Option value="Lawn & Garden Tractors & Home Lawn & Gardens Equip">
+														<Option value="Construction, Mining & Materials Handling Machinery & Equip">
+														<Option value="Construction Machinery & Equip">
+														<Option value="Mining Machinery & Equip (No Oil & Gas Field Mach & Equip)">
+														<Option value="Oil & Gas Field Machinery & Equipment">
+														<Option value="Industrial Trucks, Tractors, Trailers & Stackers">
+														<Option value="Metalworkg Machinery & Equipment">
+														<Option value="Machine Tools, Metal Cutting Types">
+														<Option value="Special Industry Machinery (No Metalworking Machinery)">
+														<Option value="Printing Trades Machinery & Equipment">
+														<Option value="Special Industry Machinery, NEC">
+														<Option value="General Industrial Machinery & Equipment">
+														<Option value="Pumps & Pumping Equipment">
+														<Option value="Ball & Roller Bearings">
+														<Option value="Industrial & Commercial Fans & Blowers & Air Purifying Equip">
+														<Option value="Industrial Process Furnaces & Ovens">
+														<Option value="General Industrial Machinery & Equipment, NEC">
+														<Option value="Computer & office Equipment">
+														<Option value="Electronic Computers">
+														<Option value="Computer Storage Devices">
+														<Option value="Computer Terminals">
+														<Option value="Computer Communications Equipment">
+														<Option value="Computer Peripheral Equipment, NEC">
+														<Option value="Calculating & Accounting Machines (No Electronic Computers)">
+														<Option value="Office Machines, NEC">
+														<Option value="Refrigeration & Service Industry Machinery">
+														<Option value="Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip">
+														<Option value="Misc Industrial & Commercial Machinery & Equipment">
+														<Option value="Electronic & Other Electrical Equipment (No Computer Equip)">
+														<Option value="Power, Distribution & Specialty Transformers">
+														<Option value="Switchgear & Switchboard Apparatus">
+														<Option value="Electrical Industrial Apparatus">
+														<Option value="Motors & Generators">
+														<Option value="Household Appliances">
+														<Option value="Electric Housewares & Fans">
+														<Option value="Electric Lighting & Wiring Equipment">
+														<Option value="Household Audio & Video Equipment">
+														<Option value="Phonograph Records & Prerecorded Audio Tapes & Disks">
+														<Option value="Telephone & Telegraph Apparatus">
+														<Option value="Radio & TV Broadcasting & Communications Equipment">
+														<Option value="Communications Equipment, NEC">
+														<Option value="Electronic Components & Accessories">
+														<Option value="Printed Circuit Boards">
+														<Option value="Semiconductors & Related Devices">
+														<Option value="Electronic Coils, Transformers & Other Inductors">
+														<Option value="Electronic Connectors">
+														<Option value="Electronic Components, NEC">
+														<Option value="Miscellaneous Electrical Machinery, Equipment & Supplies">
+														<Option value="Magnetic & Optical Recording Media">
+														<Option value="Motor Vehicles & Passenger Car Bodies">
+														<Option value="Truck & Bus Bodies">
+														<Option value="Motor Vehicle Parts & Accessories">
+														<Option value="Truck Trailers">
+														<Option value="Motor Homes">
+														<Option value="Aircraft & Parts">
+														<Option value="Aircraft">
+														<Option value="Aircraft Engines & Engine Parts">
+														<Option value="Aircraft Parts & Auxiliary Equipment, NEC">
+														<Option value="Ship & Boat Building & Repairing">
+														<Option value="Railroad Equipment">
+														<Option value="Motorcycles, Bicycles & Parts">
+														<Option value="Guided Missiles & Space Vehicles & Parts">
+														<Option value="Miscellaneous Transportation Equipment">
+														<Option value="Search, Detection, Navigation, Guidance, Aeronautical Sys">
+														<Option value="Laboratory Apparatus & Furniture">
+														<Option value="Auto Controls For Regulating Residential & Comml Environments">
+														<Option value="Industrial Instruments For Measurement, Display, and Control">
+														<Option value="Totalizing Fluid Meters & Counting Devices">
+														<Option value="Instruments For Meas & Testing of Electricity & Elec Signals">
+														<Option value="Laboratory Analytical Instruments">
+														<Option value="Optical Instruments & Lenses">
+														<Option value="Measuring & Controlling Devices, NEC">
+														<Option value="Surgical & Medical Instruments & Apparatus">
+														<Option value="Orthopedic, Prosthetic & Surgical Appliances & Supplies">
+														<Option value="Dental Equipment & Supplies">
+														<Option value="X-Ray Apparatus & Tubes & Related Irradiation Apparatus">
+														<Option value="Electromedical & Electrotherapeutic Apparatus">
+														<Option value="Ophthalmic Goods">
+														<Option value="Photographic Equipment & Supplies">
+														<Option value="Watches, Clocks, Clockwork Operated Devices/Parts">
+														<Option value="Jewelry, Silverware & Plated Ware">
+														<Option value="Jewelry, Precious Metal">
+														<Option value="Musical Instruments">
+														<Option value="Dolls & Stuffed Toys">
+														<Option value="Games, Toys & Children's Vehicles (No Dolls & Bicycles)">
+														<Option value="Sporting & Athletic Goods, NEC">
+														<Option value="Pens, Pencils & Other Artists' Materials">
+														<Option value="Costume Jewelry & Novelties">
+														<Option value="Miscellaneous Manufacturing Industries">
+														<Option value="Railroads, Line-Haul Operating">
+														<Option value="Railroad Switching & Terminal Establishments">
+														<Option value="Local & Suburban Transit & Interurban Hwy Passenger Trans">
+														<Option value="Trucking & Courier Services (No Air)">
+														<Option value="Trucking (No Local)">
+														<Option value="Public Warehousing & Storage">
+														<Option value="Terminal Maintenance Facilities For Motor Freight Transport">
+														<Option value="Water Transportation">
+														<Option value="Deep Sea Foreign Transportation of Freight">
+														<Option value="Air Transportation, Scheduled">
+														<Option value="Air Courier Services">
+														<Option value="Air Transportation, Nonscheduled">
+														<Option value="Airports, Flying Fields & Airport Terminal Services">
+														<Option value="Pipe Lines (No Natural Gas)">
+														<Option value="Transportation Services">
+														<Option value="Arrangement of Transportation of Freight & Cargo">
+														<Option value="Radiotelephone Communications">
+														<Option value="Telephone Communications (No Radiotelephone)">
+														<Option value="Telegraph & Other Message Communications">
+														<Option value="Radio Broadcasting Stations">
+														<Option value="Television Broadcasting Stations">
+														<Option value="Cable & Other Pay Television Services">
+														<Option value="Communications Services, NEC">
+														<Option value="Electric, Gas & Sanitary Services">
+														<Option value="Electric Services">
+														<Option value="Natural Gas Transmission">
+														<Option value="Natural Gas Transmission & Distribution">
+														<Option value="Natural Gas Distribution">
+														<Option value="Other">
+														<Option value="Electric & Other Services Combined">
+														<Option value="Gas & Other Services Combined">
+														<Option value="Water Supply">
+														<Option value="Sanitary Services">
+														<Option value="Refuse Systems">
+														<Option value="Hazardous Waste Management">
+														<Option value="Steam & Air-Conditioning Supply">
+														<Option value="Co-generation Services & Small Power Producers">
+														<Option value="Wholesale-Durable Goods">
+														<Option value="Wholesale-Motor Vehicles & Motor Vehicle Parts & Supplies">
+														<Option value="Wholesale-Motor Vehicle Supplies & New Parts">
+														<Option value="Wholesale-Furniture & Home Furnishings">
+														<Option value="Wholesale-Lumber & Other Construction Materials">
+														<Option value="Wholesale-Lumber, Plywood, millwork & Wood Panels">
+														<Option value="Wholesale-Professional & Commercial Equipment & Supplies">
+														<Option value="Wholesale-Computers & Peripheral Equipment & Software">
+														<Option value="Wholesale-Medical, Dental & Hospital Equipment & Supplies">
+														<Option value="Wholesale-Metals & Minerals (No Petroleum)">
+														<Option value="Wholesale-Metals Service Centers & Offices">
+														<Option value="Wholesale-Electrical Apparatus & Equipment, Wiring Supplies">
+														<Option value="Wholesale-Electrical Appliances, TV & Radio Sets">
+														<Option value="Wholesale-Electronic Parts & Equipment, NEC">
+														<Option value="Wholesale-Hardware & Plumbing & Heating Equipment & Supplies">
+														<Option value="Wholesale-Hardware">
+														<Option value="Wholesale-Machinery, Equipment & Supplies">
+														<Option value="Wholesale-Construction & Mining (No Petro) Machinery & Equip">
+														<Option value="Wholesale-Industrial Machinery & Equipment">
+														<Option value="Wholesale-Misc Durable Goods">
+														<Option value="Wholesale-Jewelry, Watches, Precious Stones & Metals">
+														<Option value="Wholesale-Durable Goods, NEC">
+														<Option value="Wholesale-Paper & Paper Products">
+														<Option value="Wholesale-Drugs, Proprietaries & Druggists' Sundries">
+														<Option value="Wholesale-Apparel, Piece Goods & Notions">
+														<Option value="Wholesale-Groceries & Related Products">
+														<Option value="Wholesale-Groceries, General Line (merchandise)">
+														<Option value="Wholesale-Farm Product Raw Materials">
+														<Option value="Wholesale-Chemicals & Allied Products">
+														<Option value="Wholesale-Petroleum Bulk Stations & Terminals">
+														<Option value="Wholesale-Petroleum & Petroleum Products (No Bulk Stations)">
+														<Option value="Wholesale-Beer, Wine & Distilled Alcoholic Beverages">
+														<Option value="Wholesale-Miscellaneous Non-durable Goods">
+														<Option value="Retail-Building Materials, Hardware, Garden Supply">
+														<Option value="Retail-Lumber & Other Building Materials Dealers">
+														<Option value="Retail-Mobile Home Dealers">
+														<Option value="Retail-Department Stores">
+														<Option value="Retail-Variety Stores">
+														<Option value="Retail-Misc General Merchandise Stores">
+														<Option value="Retail-Food Stores">
+														<Option value="Retail-Grocery Stores">
+														<Option value="Retail-Convenience Stores">
+														<Option value="Retail-Auto Dealers & Gasoline Stations">
+														<Option value="Retail-Auto & Home Supply Stores">
+														<Option value="Boat Dealers">
+														<Option value="Retail-Apparel & Accessory Stores">
+														<Option value="Retail-Women's Clothing Stores">
+														<Option value="Retail-Family Clothing Stores">
+														<Option value="Retail-Shoe Stores">
+														<Option value="Retail-Home Furniture, Furnishings & Equipment Stores">
+														<Option value="Retail-Furniture Stores">
+														<Option value="Retail-Radio, TV & Consumer Electronics Stores">
+														<Option value="Retail-Computer & Computer Software Stores">
+														<Option value="Retail-Record & Prerecorded Tape Stores">
+														<Option value="Retail-Eating & Drinking Places">
+														<Option value="Retail-Eating Places">
+														<Option value="Retail-Miscellaneous Retail">
+														<Option value="Retail-Drug Stores and Proprietary Stores">
+														<Option value="Retail-Miscellaneous Shopping Goods Stores">
+														<Option value="Retail-Jewelry Stores">
+														<Option value="Retail-Hobby, Toy & Game Shops">
+														<Option value="Retail-Nonstore Retailers">
+														<Option value="Retail-Catalog & Mail-Order Houses">
+														<Option value="Retail-Retail Stores, NEC">
+														<Option value="Pay Day Lenders">
+														<Option value="National Commercial Banks">
+														<Option value="State Commercial Banks">
+														<Option value="Commercial Banks, NEC">
+														<Option value="Savings Institution, Federally Chartered">
+														<Option value="Savings Institutions, Not Federally Chartered">
+														<Option value="Functions Related To Depository Banking, NEC">
+														<Option value="Federal & Federally Sponsored Credit Agencies">
+														<Option value="Personal Credit Institutions">
+														<Option value="Short-Term Business Credit Institutions">
+														<Option value="Miscellaneous Business Credit Institution">
+														<Option value="Mortgage Bankers & Loan Correspondents">
+														<Option value="Loan Brokers">
+														<Option value="Finance Lessors">
+														<Option value="Asset-Backed Securities">
+														<Option value="Finance Services">
+														<Option value="Security & Commodity Brokers, Dealers, Exchanges & Services">
+														<Option value="Security Brokers, Dealers & Flotation Companies">
+														<Option value="Commodity Contracts Brokers & Dealers">
+														<Option value="Investment Advice">
+														<Option value="Life Insurance">
+														<Option value="Accident & Health Insurance">
+														<Option value="Hospital & Medical Service Plans">
+														<Option value="Fire, Marine & Casualty Insurance">
+														<Option value="Surety Insurance">
+														<Option value="Title Insurance">
+														<Option value="Insurance Carriers, NEC">
+														<Option value="Insurance Agents, Brokers & Service">
+														<Option value="Real Estate">
+														<Option value="Real Estate Operators (No Developers) & Lessors">
+														<Option value="Operators of Nonresidential Buildings">
+														<Option value="Operators of Apartment Buildings">
+														<Option value="Lessors of Real Property, NEC">
+														<Option value="Real Estate Agents & Managers (For Others)">
+														<Option value="Real Estate Dealers (For Their Own Account)">
+														<Option value="Land Subdividers & Developers (No Cemeteries)">
+														<Option value="Blank Checks">
+														<Option value="Oil Royalty Traders">
+														<Option value="Patent Owners & Lessors">
+														<Option value="Mineral Royalty Traders">
+														<Option value="Real Estate Investment Trusts">
+														<Option value="Investors, NEC">
+														<Option value="Hotels, Rooming Houses, Camps & Other Lodging Places">
+														<Option value="Hotels & Motels">
+														<Option value="Services-Personal Services">
+														<Option value="Services-Advertising">
+														<Option value="Services-Advertising Agencies">
+														<Option value="Services-Consumer Credit Reporting, Collection Agencies">
+														<Option value="Services-Mailing, Reproduction, Commercial Art & Photography">
+														<Option value="Services-Direct Mail Advertising Services">
+														<Option value="Services-Photocopying and Duplicating Services">
+														<Option value="Services-To Dwellings & Other Buildings">
+														<Option value="Services-Miscellaneous Equipment Rental & Leasing">
+														<Option value="Services-Equipment Rental & Leasing, NEC">
+														<Option value="Services-Employment Agencies">
+														<Option value="Services-Help Supply Services">
+														<Option value="Services-Computer Programming, Data Processing, Etc.">
+														<Option value="Services-Computer Programming Services">
+														<Option value="Services-Prepackaged Software">
+														<Option value="Services-Computer Integrated Systems Design">
+														<Option value="Services-Computer Processing & Data Preparation">
+														<Option value="Services-Computer Rental & Leasing">
+														<Option value="Services-Miscellaneous Business Services">
+														<Option value="Services-Detective, Guard & Armored Car Services">
+														<Option value="Services-Photofinishing Laboratories">
+														<Option value="Services-Telephone Interconnect Systems">
+														<Option value="Services-Business Services, NEC">
+														<Option value="Services-Automotive Repair, Services & Parking">
+														<Option value="Services-Auto Rental & Leasing (No Drivers)">
+														<Option value="Services-Miscellaneous Repair Services">
+														<Option value="Services-Motion Picture & Video Tape Production">
+														<Option value="Services-Allied To Motion Picture Production">
+														<Option value="Services-Motion Picture & Video Tape Distribution">
+														<Option value="Services-Allied To Motion Picture Distribution">
+														<Option value="Services-Motion Picture Theaters">
+														<Option value="Services-Video Tape Rental">
+														<Option value="Services-Amusement & Recreation Services">
+														<Option value="Services-Racing, Including Track Operation">
+														<Option value="Services-Miscellaneous Amusement & Recreation">
+														<Option value="Services-Video Game Arcades">
+														<Option value="Services-Gambling Transactions">
+														<Option value="Services-Amusement Parks">
+														<Option value="Services-Membership Sports & Recreation Clubs">
+														<Option value="Services-Health Services">
+														<Option value="Services-Offices & Clinics of Doctors of Medicine">
+														<Option value="Services-Nursing & Personal Care Facilities">
+														<Option value="Services-Skilled Nursing Care Facilities">
+														<Option value="Services-Hospitals">
+														<Option value="Services-General Medical & Surgical Hospitals, NEC">
+														<Option value="Services-Medical Laboratories">
+														<Option value="Services-Home Health Care Services">
+														<Option value="Services-Misc Health & Allied Services, NEC">
+														<Option value="Services-Specialty Outpatient Facilities, NEC">
+														<Option value="Services-Legal Services">
+														<Option value="Services-Educational Services">
+														<Option value="Services-Social Services">
+														<Option value="Services-Child Day Care Services">
+														<Option value="Services-Membership organizations">
+														<Option value="Services-Engineering, Accounting, Research, Management">
+														<Option value="Services-Engineering Services">
+														<Option value="Services-Commercial Physical & Biological Research">
+														<Option value="Services-Testing Laboratories">
+														<Option value="Services-Management Services">
+														<Option value="Services-Management Consulting Services">
+														<Option value="Services-Facilities Support Management Services">
+														<Option value="Business Consulting Services, Not Elsewhere Classified">
+														<Option value="American Depositary Receipts">
+														<Option value="Foreign Governments">
+														<Option value="Services-Services, NEC">
+														<Option value="International Affairs">
+														<Option value="Non-Operating Establishments">
+
+												</datalist>
+											</div>
+										<br>
+											Message*:<br>
+												<input type="text" name="message" placeholder="Type message" style="width:400px; height:50px;">
+										<br>
+											Attach supporting documents (requirements, visio documents, images):<br>
+												<input type="file" name="supporting documents" style="width:400px;">
+										 <br><br>
+											<input type="submit" value="Submit">
+									</form>
+						</div>
+
+				</body>
+	</html>

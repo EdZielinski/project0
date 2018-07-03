@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAK,GACA;EACC,OAAO,EAAE,KAAK;EACd,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;;AAGnB,QACA;EACC,UAAU,EAAE,MAAM;;AAGlB,YACD;EACA,YACC;IACC,OAAO,EAAE,IAAI",
+"sources": ["TestimonialsStyle.scss"],
+"names": [],
+"file": "TestimonilsStyle.css"
+}
