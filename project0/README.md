@@ -1,5 +1,5 @@
-•	This website consists of four pages.  There are the home, services, testimonials and FAQ pages.  It is possible to get from any page on the website to any other page by following the hyperlinks.
-•	Website must include at least one list (ordered or unordered), at least one table, and at least one image.
+*	This website consists of four pagess.  There are the home, services, testimonials and FAQ pages.  It is possible to get from any page on the website to any other page by following the hyperlinks.
+*	Website must include at least one list (ordered or unordered), at least one table, and at least one image.
 o	There are five images, and the img selector centers the images on the Testimonial page.
 o	Two unordered lists on the main page
 o	One table on the FAQ page
