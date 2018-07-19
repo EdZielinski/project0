@@ -1,18 +1,19 @@
 #   Project0
 *	This website consists of *four* pagess.  There are the **home**, **services**, testimonials and FAQ pages.  It is possible to get from any page on the website to any other page by following the hyperlinks.
 *	Website must include at least one list (ordered or unordered), at least one table, and at least one image.
-o	There are five images, and the img selector centers the images on the Testimonial page.
-o	Two unordered lists on the main page
-o	One table on the FAQ page
+*	*There are five images, and the img selector centers the images on the Testimonial page.*
+*	**Two unordered lists on the main page**
+*   [google](http://www.google.com "to the site")
+*   One table on the FAQ page
 	This table has its style defined on the FAQ page.
 •	Website must have at least one stylesheet file.
 o	There is one stylesheet file named style_main.css that drives most of the formatting for the entire website.
 •	Stylesheet(s) must use at least five different CSS properties, and at least five different types of CSS selectors.  You must use the #id selector at least once and the .class selector at least once.
 	At least five different CSS properties are used.
--	color
--	background-color
-	padding
-	border
+- color
+-background-color
+1. padding
+2. border
 	display
 	margin-left
 	margin-right
