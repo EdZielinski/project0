@@ -18,3 +18,21 @@
 
 ![IMAGE](images/imageOne_WelcomePage.png)
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note:  Should the user click submit here and not enter a name, the bootstrap model relies on popper.js to pop up a message stating, 'this is a required field.'  Bootstrap 4 depends on JavaScript which uses popper.js.
+See https://getbootstrap.com/docs/4.1/getting-started/javascript/
+
+**Event Two=document.querySelector('#nameForm').addEventListener('submit',(event)=>{}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User types a name in the 'Welcome' screen (#nameForm) and clicks the submit button. The #inputName is stored in local Storage and the functio switchToChannels() is called.  The submit button default event from HTML is prevented from running by using the event.preventDefault() function.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The switchToChannels() function switches the view to channels by changing the following attributes in the HTML document:
+
+* The nameHeading class is changed to 'Hi'+ localStorage.getItem("name)
+* The heading class is changed to 'Select channel'
+* The id=nameForm view is set to not visible by adding the d-none utility in bootstrap. See reference at bootstrap about utilities https://getbootstrap.com/docs/4.0/migration/#utilities
+* The chatrooms class is set to visible by removing the d-none utility in bootstrap
+* The channelFormRow is set to visible by removing the d-none utility in bootstrap
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The current_view is now 'channels.' Note that jinja2 displays all channels, and if no channels are stored, then 'general' is the default value as defined in the application.py file. As channels grow in number, bootstraps responsiveness keeps moving the channels down the page.
+
+![IMAGE](images/imageTwo_switchToChannels.png)
