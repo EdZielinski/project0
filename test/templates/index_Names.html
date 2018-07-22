@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h4
+            {
+                color: orange
+            }
+
+    </style>
+    <head>
+        <title>My Website!</title>
+    </head>
+    <body>
+        <h4>Where do you start?</h4></h4>
+        <h1>Names</h1>
+
+        <ul>
+            {% for name in names %}
+                <li>{{ name }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
