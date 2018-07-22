@@ -21,7 +21,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note:  Should the user click submit here and not enter a name, the bootstrap model relies on popper.js to pop up a message stating, 'this is a required field.'  Bootstrap 4 depends on JavaScript which uses popper.js.
 See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 
-**Event Two=document.querySelector('#nameForm').addEventListener('submit',(event)=>{}
+**Event Two - document.querySelector('#nameForm').addEventListener('submit',(event)=>{}**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User types a name in the 'Welcome' screen (#nameForm) and clicks the submit button. The #inputName is stored in local Storage and the functio switchToChannels() is called.  The submit button default event from HTML is prevented from running by using the event.preventDefault() function.
 
@@ -36,3 +36,44 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The current_view is now 'channels.' Note that jinja2 displays all channels, and if no channels are stored, then 'general' is the default value as defined in the application.py file. As channels grow in number, bootstraps responsiveness keeps moving the channels down the page.
 
 ![IMAGE](images/imageTwo_switchToChannels.png)
+
+**Event Three - document.querySelector('#channelForm').addEventListener('submit',(event)=>{}**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The user types in a Channel name and clicks add.  The following happens:
+
+* The channel name originates from the HTML document, and then sent through the socket "add channel" on the server.
+* The add_channel function checks for duplicates and an error emits back to the client if there is a duplicate.
+* If not a duplicate then the channel name passes the message to the clients.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next 'Event One' triggers again after the Document is loaded.  This time there is a name in local storage and there is a channel name, so the switchToChannels function runs again and the channels are displayed one under each other on the grid. See illustration below.
+
+![IMAGE](images/imageThree_channelForm_AddChannels.png)
+
+
+**Event Four - channel.addEventListener('click',()=>{}**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The user clicks on one of the channels. The following happens:
+
+* The heading class is changed to the channel name clicked on
+* Current_channel is assigned the value of the channel chosen
+* Do not display chatrooms
+* Show message FormRow
+* Show the chat messages
+* Do not show the channelFormRow
+* Show messagesFormRow
+* Show the chat messages
+* Show all child channels
+* Assign the current_view = ‘chat’
+* Set the channel name to channel
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The view appears in the illustration below.
+
+![IMAGE](images/imagFour_SendAMessageDisplayMessage.png)
+
+**Event Five – document.querySelector('#messageForm').addEventListener('submit', (event) => {}**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the user inputs a message and clicks send the message from the HTML document uses the socketio new message to transfer the message on the messageForm to the Server to broadcast to the clients.
+
+**Event Six - document.querySelector('.back').addEventListener('click', () => {}**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the user clicks the back arrow on the view shown above, then the view changes back to the channelFormRow. The messages and messageFormRow are removed from the view.
