@@ -1,3 +1,3 @@
-# Project 2
+# **Chatterbox**
 
-Web Programming with Python and JavaScript
+    This project is a single-page
