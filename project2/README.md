@@ -81,10 +81,9 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 * If the author is equal to the locally stored author, then we identify the author with the class ‘self’
 * If the message identifies with the ‘self’ class, then the message adds a ‘close button’ and the message floats left.  See picture above.
 * If the message is not the author’s, then there is not a ‘close button’ added and the message floats right
+* The display below highlights the design of the message display
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The display below highlights the design of the message display
-
-![IMAGE](images/imageFiveFormat.png)
+![IMAGE](ImageSIX_messageFormattingBehaviour.png)
 
 **Event Six - document.querySelector('.back').addEventListener('click', () => {}**
 
