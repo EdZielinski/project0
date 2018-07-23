@@ -106,10 +106,13 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 
 
 **Requirements**
+
 **Display Name:**
+
 * User visits for the first time
 * User should be prompted to type in a display name that will eventually be associated with every message the user sends.
 * If a user closes the page and returns to the app later, the display name should still be remembered.
+*
 **Channel Creation:**
 * Any user should be able to create a new channel, so long as its name doesn’t conflict with the name of an existing channel.
 **Channel List:**
