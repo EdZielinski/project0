@@ -72,7 +72,19 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 
 **Event Five – document.querySelector('#messageForm').addEventListener('submit', (event) => {}**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the user inputs a message and clicks send the message from the HTML document uses the socketio new message to transfer the message on the messageForm to the Server to broadcast to the clients.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After the user inputs a message from a channel and clicks send, the message uses the socketio new message to transfer the message on the messageForm to the Server and broadcasts it to the clients.  After the message gets loaded onto the server (load message):
+
+* The message gets stored in their appropriate channel
+* The message sets attributes to identify the author, message, channel, and timestamp
+* Classes are dynamically added to the div
+* When receiving messages into the UI, JavaScript identifies who the message is from (message.author)
+* If the author is equal to the locally stored author, then we identify the author with the class ‘self’
+* If the message identifies with the ‘self’ class, then the message adds a ‘close button’ and the message floats left.  See picture above.
+* If the message is not the author’s, then there is not a ‘close button’ added and the message floats right
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The display below highlights the design of the message display
+
+![IMAGE](images/imageFive_messagebox formatting.png)
 
 **Event Six - document.querySelector('.back').addEventListener('click', () => {}**
 
