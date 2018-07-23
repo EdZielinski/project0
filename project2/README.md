@@ -89,3 +89,9 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 **Event Six - document.querySelector('.back').addEventListener('click', () => {}**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the user clicks the back arrow on the view, then the view changes back to the channelFormRow. The messages and messageFormRow are removed from the view.
+
+**Event Seven - Delete Event**
+
+**Card Body Design Choice
+
+**Documentation**
