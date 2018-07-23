@@ -92,6 +92,8 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 
 **Event Seven - Delete Event**
 
-**Card Body Design Choice
+**Card Body Design Choice**
+
+**REQUIREMENTS**
 
 **Documentation**
