@@ -85,6 +85,9 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 
 ![IMAGE](images/ImageSIX_messageFormattingBehaviour.png)
 
+* The class ‘self’ is added to the div and if the message is the authors, then it **floats left**, blue color, a close icon, an author tab, timestamp and a blue back color
+* If there is **not** a ‘self’ class then the message is not the originating author, **floats right**, grey color, a close icon, an author tab, timestamp and  grey back color
+*
 **Event Six - document.querySelector('.back').addEventListener('click', () => {}**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the user clicks the back arrow on the view, then the view changes back to the channelFormRow. The messages and messageFormRow are removed from the view.
