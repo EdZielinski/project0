@@ -83,7 +83,7 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 * If the message is not the author’s, then there is not a ‘close button’ added and the message floats right
 * The display below highlights the design of the message display
 
-![IMAGE](Images/SIX_messageFormattingBehaviour.png)
+![IMAGE](/imagesImageSIX_messageFormattingBehaviour.png)
 
 **Event Six - document.querySelector('.back').addEventListener('click', () => {}**
 
