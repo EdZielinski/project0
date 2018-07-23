@@ -84,7 +84,7 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The display below highlights the design of the message display
 
-![IMAGE](images/imageFive_messagebox formatting.png)
+
 
 **Event Six - document.querySelector('.back').addEventListener('click', () => {}**
 
