@@ -119,7 +119,7 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 
 **Channel List:**
 
-* Users can see a list of all current channels, and selecting one should allow the user to view the channel.
+* Users can see a list of all current channels, and selecting one allows the user to view the channel.
 
 **Messages View:**
 
