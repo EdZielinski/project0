@@ -23,7 +23,7 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 
 **Event Two - document.querySelector('#nameForm').addEventListener('submit',(event)=>{}**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User types a name in the 'Welcome' screen (#nameForm) and clicks the submit button. The #inputName is stored in local Storage and the functio switchToChannels() is called.  The submit button default event from HTML is prevented from running by using the event.preventDefault() function.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User types a name in the 'Welcome' screen (#nameForm) and clicks the submit button. The #inputName is stored in local Storage and the function switchToChannels() is called.  The submit button default event from HTML is prevented from running by using the event.preventDefault() function.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The switchToChannels() function switches the view to channels by changing the following attributes in the HTML document:
 
@@ -85,56 +85,56 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 
 ![IMAGE](images/ImageSIX_messageFormattingBehaviour.png)
 
-* The class ‘self’ is added to the div and if the message is the authors, then it **floats left**, blue color, a close icon, an author tab, timestamp and a blue back color
-* If there is **not** a ‘self’ class then the message is not the originating author, **floats right**, grey color, a close icon, an author tab, timestamp and  grey back color
+* The class ‘self’ is added to the div and if the message is the authors, then it **floats left**, has a blue color, a close icon, an author tab and a timestamp
+* If there is **not** a ‘self’ class then the message is not the originating author, **floats right**, has a grey color, a close icon, an author tab and a timestamp
 
 **Event Six - document.querySelector('.back').addEventListener('click', () => {}**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the user clicks the back arrow on the view, then the view changes back to the channelFormRow. The messages and messageFormRow are removed from the view. The back arrow icon is found at https://ionicons.com/
 ![IMAGE](images/imageSevenBackButton.png)
 
-**Event Seven - – User deletes a message by clicking on the close button**
+**Event Seven – User deletes a message by clicking on the close button**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the user clicks on the close button for the message they created:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the user clicks on the close button of the message they created:
 
 * The data for the message is gathered into let data = message, author, channel, and timestamp
 * Next an emit is sent though the socket to the server in ‘delete message’
 * The channel is not deleted, but the rest of the message is sent back to the client in a ‘refresh message’
-* The ‘refresh message’ at the client level then removes to message from the html Document*
+* The ‘refresh message’ at the client level then removes the message from the html Document*
 
 ![IMAGE](images/imageEightCloseButton.png)
 
 
-**Requirements**
+**Requirements met**
 
 **Display Name:**
 
 * User visits for the first time
-* User should be prompted to type in a display name that will eventually be associated with every message the user sends.
-* If a user closes the page and returns to the app later, the display name should still be remembered.
+* User is prompted to type in a display name that will eventually be associated with every message the user sends.
+* If a user closes the page and returns to the app later, the display name is remembered.
 
 **Channel Creation:**
 
-* Any user should be able to create a new channel, so long as its name doesn’t conflict with the name of an existing channel.
-*
+* Any user can create a new channel, so long as its name doesn’t conflict with the name of an existing channel.
+
 **Channel List:**
 
-* Users should be able to see a list of all current channels, and selecting one should allow the user to view the channel.
+* Users can see a list of all current channels, and selecting one should allow the user to view the channel.
 
 **Messages View:**
 
-* Once a channel is selected, the user should see any messages that have already been sent in that channel, up to a maximum of 100 messages.
-* The app should only store the 100 most recent messages per channel in server-side memory.
+* Once a channel is selected, the user can see any messages already sent in that channel, up to a maximum of 100 messages.
+* The app only stores the 100 most recent messages per channel in server-side memory.
 
 **Sending Messages:**
 
-* Once in a channel, users should be able to send text messages to others on the channel.
-* When a user sends a message, their display name and the timestamp of the message should be associated with the message.
-* All users in the channel should then see the new message (with display name and timestamp) appear on their channel page.
-* Sending and receiving messages should NOT require reloading the page.
+* Once in a channel, users can send text messages to others on the channel.
+* When a user sends a message, their display name and the timestamp of the message is associated with the message.
+* All users in the channel can see the new message (with display name and timestamp) on their channel page.
+* Sending and receiving messages does NOT require reloading the page.
 
 **Remembering the Channel:**
-If a user is on a channel page, closes the web browser window, and goes back to your web application, your application should remember what channel the user was on previously and take the user back to that channel. Views are:
+If a user is on a channel page, closes the web browser window, and goes back to the web application, the application will remember what channel the user was on previously and take the user back to that channel. Views are:
 
 * current_view = ‘channels’
 * current_view = ‘name’  (sign on screen)
@@ -153,7 +153,6 @@ https://www.w3schools.com/bootstrap4/bootstrap_cards.asp
 https://getbootstrap.com/docs/4.0/utilities/spacing/
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 http://jinja.pocoo.org/docs/2.10/
-https://w3schools-HTML<meta>charset Attribute
 https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/jj676915(v=vs.85)
 https://ionicons.com/
 https://getbootstrap.com/docs/4.1/getting-started/javascript/
