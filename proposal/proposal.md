@@ -19,7 +19,7 @@ Charlie’s Coffee and Sandwich Shop
 
 #### In just a sentence or two, summarize your project. (e.g. "A website that lets you check the weather in different cities.")
 
-A website to provide real-time communication of inventory control for a small food vendor located within the city of Boston’s MBTA subway system.
+A website to provide real-time communication of inventory control for a small food vendor located within the city of Boston’s MBTA subway system.  The website will use the MBTA's API for schedules, arrival predictions, and service alerts because the vendor delivers the inventory on the subway.
 
 #### Where will your project ultimately live? (e.g. within CS50 IDE, Heroku, AWS, some commerical web host...)
 
