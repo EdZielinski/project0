@@ -64,7 +64,7 @@ Heroku
 #### In a sentence or list, define a GOOD outcome for your project. What WILL you accomplish no matter what?
 
 * Username and login for Vendors
-* Messaging system to talk chat back and forth to trigger an inventory delivery
+* Messaging system to chat back and forth to trigger an inventory delivery
 * Count-down clock for arrival of inventory
 * Communication between at least one vendor and the warehouse.  Determining multiple vendors time from warehouse may be difficult
 
@@ -78,7 +78,7 @@ Heroku
 
 The above items in this section are a wish list.  Realistically I believe on these three items will get accomplished in-time:
 1.	Username and login for Vendors
-2.	Messaging system to talk chat back and forth to trigger an inventory delivery
+2.	Messaging system to chat back and forth to trigger an inventory delivery
 3.	Count-down clock for arrival of inventory
 
 
