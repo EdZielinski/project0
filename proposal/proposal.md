@@ -43,14 +43,15 @@ Heroku
 * When the inventory of coffee or sandwiches falls below a certain level an order is created at the warehouse for both Coffee and Sandwich to bring them back up to the highest inventory level
 * The subway system has an API for schedules, arrival predictions, and service alerts.  The use of this API is key to the communication system.  A message displays to the vendor cart about arrival time.  A countdown animation displays on the vendor’s phone to track arrival time.  The countdown clock adjusts depending on the real-time location of the train that contains the inventory.
 * The API information is located at https://www.mbta.com/developers/v3-api and will take advantage of at least one of the following:
-* When a vehicle is predicted to be at a stop
-* The predicted schedule for one route
-* The predicted schedule for a whole trip
-* When a vehicle is scheduled to be at a stop
-* The schedule for one route
-* When a route is open
-* Query for the first and last stops on the route.
-* The schedule for a whole trip
+
+1. When a vehicle is predicted to be at a stop
+2. The predicted schedule for one route
+3. The predicted schedule for a whole trip
+4. When a vehicle is scheduled to be at a stop
+5. The schedule for one route
+6. When a route is open
+7. Query for the first and last stops on the route.
+8. The schedule for a whole trip
 
 
 
