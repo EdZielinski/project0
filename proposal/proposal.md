@@ -29,8 +29,10 @@ Heroku
 
 **Summary:**
 	Charlie has an amazing sandwich shop that serves meals from 5am to 6pm. Charlie must keep his inventory storage and shop rental costs low, so he strategically located six vendor carts around the city of Boston’s subway system.  He has a kitchen and warehouse located at one location.  Each cart can hold only 50 sandwiches and 10 lbs. of coffee.  Sales at each location range from 30 to 100 sandwiches a day and 20 lbs. of coffee per day.
+
 **Problem:**
 	Charlie must use the subway system to deliver inventory to the vendor carts located around the city.  The vendor must know whether his inventory will arrive on time; otherwise, they have to close down, or be able to manage the customer expectations of when the sandwich or coffee will arrive.
+
 **Requirements for solution:**
 * Create a communication system between the vendor carts and warehouse to monitor inventory.
 * It will have a username and login page
