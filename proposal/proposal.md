@@ -37,7 +37,7 @@ Heroku
 * Create a communication system between the vendor carts and warehouse to monitor inventory.
 * It will have a username and login page
 * Listing the location of the vendor station
-* Python, JavaScript, JSON, and Socket.IO will drive the application.  No database is necessary.
+* Python, JavaScript, JSON, and Socket.IO will drive the application.  Heroku will manage the logins and communications.
 * Implementation of Bootstrap 4’s mobile responsiveness allows the vendor carts to use their smart phones to communicate.
 * The vendor’s have a simple interface that communicates the total number of meals to the warehouse
 * When the inventory of coffee or sandwiches falls below a certain level an order is created at the warehouse for both Coffee and Sandwich to bring them back up to the highest inventory level
