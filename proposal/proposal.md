@@ -85,7 +85,7 @@ The above items in this section are a wish list.  Realistically I believe on the
 #### In a sentence or list, define a BEST outcome for your project. What do you HOPE you will accomplish in time?
 
 * Username and login for Vendors
-* Messaging system to talk chat back and forth to trigger an inventory delivery
+* Messaging system to chat back and forth to trigger an inventory delivery
 * Count-down clock for arrival of inventory
 * Determine multiple routes and times from warehouse to different vendor locations.  Realistically, it may be difficult to determine routes for varying locations.
 
