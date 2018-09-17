@@ -1,4 +1,4 @@
-#Rainy Day Application  
+# Rainy Day Application  
 ###Run import.py  
 To run this application the user must run import.py first.  
 *	At the cmd line in the terminal type ‘python import.py.’  
