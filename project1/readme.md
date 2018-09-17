@@ -1,5 +1,5 @@
 # Rainy Day Application  
-###Run import.py  
+### Run import.py  
 To run this application the user must run import.py first.  
 *	At the cmd line in the terminal type ‘python import.py.’  
 *	The import.py file makes use of the sqlalchemy import, sqlalchemy.orm and the sqlalchemy.ext.declarative
