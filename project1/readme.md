@@ -20,7 +20,7 @@ To run this application the user must run import.py first.
 *	The database engine is connected to Heroku database engine with the DATABASE_URL string.  The string for this project is 
 **	postgres://ajwkjnrqnbalur:93366a322e1bf35b3364d47073e82de1d5afcd69d5ed7e3b280dcfc74167c4ea@ec2-54-83-3-101.compute-1.amazonaws.com:5432/d97papfr8pull
 
-###Next the application.py must be run to generate the website.
+### Next the application.py must be run to generate the website.  
 *	Here the database is setup by using the ORM and the classes User, Location and Checkin.  These classes represent the ‘things’ the application is working with.  These attributes are initialized, or passed through to the templates rendered in the @app.routes defined in the application.py file.
 *	Next the index.html loads and the user either log’s-in or register’s.
 *	The Log-In form uses the POST method to submit data. 
