@@ -1,7 +1,7 @@
-#Rainy Day Application
-###Run import.py
+#Rainy Day Application  
+###Run import.py  
 To run this application the user must run import.py first.  
-*	At the cmd line in the terminal type ‘python import.py.’  
+*	At the cmd line in the terminal type â€˜python import.py.â€™  
 *	The import.py file makes use of the sqlalchemy import, sqlalchemy.orm and the sqlalchemy.ext.declarative
 **	These imports make use of the Object-Relational Mapper (ORM) which is mapped to the Heroku database
 **	The chunk in range portion of the code allows the use of the import module to easily handle a large amount of data in a file.  Chunk allows the splitting of each line in the .csv file to import.  This assures proper import into the proper field of the table.
@@ -21,8 +21,8 @@ To run this application the user must run import.py first.
 **	postgres://ajwkjnrqnbalur:93366a322e1bf35b3364d47073e82de1d5afcd69d5ed7e3b280dcfc74167c4ea@ec2-54-83-3-101.compute-1.amazonaws.com:5432/d97papfr8pull
 
 ###Next the application.py must be run to generate the website.
-*	Here the database is setup by using the ORM and the classes User, Location and Checkin.  These classes represent the ‘things’ the application is working with.  These attributes are initialized, or passed through to the templates rendered in the @app.routes defined in the application.py file.
-*	Next the index.html loads and the user either log’s-in or register’s.
+*	Here the database is setup by using the ORM and the classes User, Location and Checkin.  These classes represent the â€˜thingsâ€™ the application is working with.  These attributes are initialized, or passed through to the templates rendered in the @app.routes defined in the application.py file.
+*	Next the index.html loads and the user either logâ€™s-in or registerâ€™s.
 *	The Log-In form uses the POST method to submit data. 
 *	Next the email and password are passed in with the form and redirected to the Search page upon successful query of the database for the email and password.	
 *	If there are invalid credentials, then the user is redirected to the login.html page before receiving an error message.
@@ -37,7 +37,7 @@ To run this application the user must run import.py first.
 *	Once this is clicked then the locations/zipcode is opend to pull the tblLocations table data and the required weather data into template_data.
 *	This template_data of weather and location attributes is passed to the location.html page in the city_data dataset.  This is displayed in a card body class.
 *	And then if the user has not made a comment then the city comment is opened for the user to add a comment.  Once one comment is made by a user, then it cannot be edited.  If a new user signs on, then they can make a comment for this location.
-*	The number of check-ins are tallied and displayed in the card body class titled ‘No. of checkins.’
+*	The number of check-ins are tallied and displayed in the card body class titled â€˜No. of checkins.â€™
 *	This is kept track in the checkin_count column of the Tbllocations table.
 *	The calculation occurs in the def comment where 1 is added to the current comment count as the comment is being committed to the database.
 *	An API calls are made by entering the browser path <host>:/api/(zipcode)
